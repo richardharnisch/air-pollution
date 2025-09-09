@@ -32,6 +32,9 @@ dependencies = [
     "openmeteo_requests",
     "retry_requests",
     "requests_cache",
+    "radon",
+    "vulture",
+    "ruff",
 ]
 requires-python = "~=3.10.0"
 
