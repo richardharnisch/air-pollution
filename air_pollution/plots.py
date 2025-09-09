@@ -1,10 +1,9 @@
 from pathlib import Path
 
 from loguru import logger
-from tqdm import tqdm
-import typer
-import pandas as pd
 import matplotlib.pyplot as plt
+import pandas as pd
+import typer
 
 from air_pollution.config import FIGURES_DIR, PROCESSED_DATA_DIR
 
@@ -26,7 +25,7 @@ def main(
     df.set_index("date", inplace=True)
     df["rolling_avg"] = df["nitrogen_dioxide"].rolling("7D").mean()
 
-    fig, ax = plt.subplots()
+    _, ax = plt.subplots()
     ax.plot(df.index, df["rolling_avg"], label="1-Week Rolling Average", color="orange")
     ax.set_xlabel("Date")
     ax.set_ylabel("Concentration ($\mu g/m$)")
