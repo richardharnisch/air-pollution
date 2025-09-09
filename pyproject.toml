@@ -28,7 +28,7 @@ requires-python = "~=3.10.0"
 
 
 [tool.ruff]
-line-length = 99
+line-length = 120
 src = ["air_pollution"]
 include = ["pyproject.toml", "air_pollution/**/*.py"]
 
