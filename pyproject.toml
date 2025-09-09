@@ -23,6 +23,11 @@ dependencies = [
     "ruff",
     "tqdm",
     "typer",
+    "pandas",
+    "numpy",
+    "scikit-learn",
+    "matplotlib",
+    "seaborn",
 ]
 requires-python = "~=3.10.0"
 
