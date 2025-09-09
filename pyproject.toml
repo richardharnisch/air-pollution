@@ -28,6 +28,10 @@ dependencies = [
     "scikit-learn",
     "matplotlib",
     "seaborn",
+    "requests",
+    "openmeteo_requests",
+    "retry_requests",
+    "requests_cache",
 ]
 requires-python = "~=3.10.0"
 
